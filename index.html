@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3f4ec" />
+    <meta name="description" content="A calm, guided breathing practice for every moment." />
+    <title>Pranayama — Find your rhythm</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="techniques.js" defer></script>
+    <script src="engine.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Pranayama home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>pranayama</span>
+      </a>
+      <div class="topbar-note"><span class="live-dot"></span> A little room to breathe</div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">BREATHING PRACTICES · 6 WAYS TO RESET</p>
+          <h1 id="hero-title">Find your<br /><em>own rhythm.</em></h1>
+          <p class="hero-description">A few mindful minutes can change the shape of your day. Choose a practice and let your breath lead.</p>
+          <a class="hero-link" href="#practices">Explore practices <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="sun-disc"></div>
+          <div class="art-ring art-ring-one"></div>
+          <div class="art-ring art-ring-two"></div>
+          <div class="art-leaf leaf-one"></div>
+          <div class="art-leaf leaf-two"></div>
+          <div class="art-caption">inhale<br />exhale</div>
+        </div>
+      </section>
+
+      <section class="practice-library" id="practices" aria-labelledby="library-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE PRACTICE LIBRARY</p>
+            <h2 id="library-title">What do you need today?</h2>
+          </div>
+          <span class="practice-count">06 <span>practices</span></span>
+        </div>
+        <div id="technique-groups" class="technique-groups"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Take what you need. Leave the rest.</span>
+      <span>Made for a slower moment <span class="footer-spark">✳</span></span>
+    </footer>
+
+    <div class="overlay" id="session-overlay" hidden>
+      <section class="session-card" role="dialog" aria-modal="true" aria-labelledby="session-title">
+        <button class="icon-button close-button" id="close-session" aria-label="Close practice">×</button>
+        <div id="session-content"></div>
+      </section>
+    </div>
+  </body>
+</html>
